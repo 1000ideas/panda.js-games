@@ -1,6 +1,6 @@
 pandaConfig = {
-    name: 'Flying Dog',
-    version: '1.0.1',
+    name: 'Bunny in Easterland',
+    version: '2.0',
     
     system: {
         width: 768,

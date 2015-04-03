@@ -8,7 +8,7 @@ game.module(
 .body(function() {
 
 game.createScene('Main', {
-    backgroundColor: 0xb2dcef,
+    backgroundColor: 0xf9f281,
     obstacleInterval: 1500,
     gravity: 2000,
     score: 0,

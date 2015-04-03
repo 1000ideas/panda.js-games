@@ -183,11 +183,17 @@ game.createClass('Logo', {
         this.container.position.y = -150;
         this.container.addTo(game.scene.stage);
 
-        var logo1 = new game.Sprite('logo1.png', game.system.width / 2, 0, { anchor: { x: 0.5, y: 0.5 }});
+        var logo1 = new game.Sprite('logo2.png', game.system.width / 2, -50, { anchor: { x: 0.5, y: 0.5 }});
         logo1.addTo(this.container);
 
-        var logo2 = new game.Sprite('logo2.png', game.system.width / 2, 80, { anchor: { x: 0.5, y: 0.5 }});
+        var logo2 = new game.Sprite('logo1.png', game.system.width / 2, 160, { anchor: { x: 0.5, y: 0.5 }});
         logo2.addTo(this.container);
+
+        var logo3 = new game.Sprite('logo4.png', game.system.width / 2, 50, { anchor: { x: 0.5, y: 0.5 }});
+        logo3.addTo(this.container);
+
+        var logo4 = new game.Sprite('logo3.png', game.system.width / 2, 250, { anchor: { x: 0.5, y: 0.5 }});
+        logo4.addTo(this.container);
 
         game.scene.addTween(this.container.position, {
             y: 200
@@ -206,6 +212,20 @@ game.createClass('Logo', {
 
         game.scene.addTween(logo2.position, {
             y: 100
+        }, 1000, {
+            repeat: Infinity,
+            yoyo: true,
+            easing: 'Quadratic.InOut'
+        }).start();
+        game.scene.addTween(logo3.position, {
+            y: 40
+        }, 1000, {
+            repeat: Infinity,
+            yoyo: true,
+            easing: 'Quadratic.InOut'
+        }).start();
+        game.scene.addTween(logo4.position, {
+            y: 200
         }, 1000, {
             repeat: Infinity,
             yoyo: true,
