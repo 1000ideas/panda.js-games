@@ -48,9 +48,9 @@ game.createScene('Main', {
         this.scoreText.position.x = game.system.width / 2 - this.scoreText.width / 2;
         this.scoreText.addTo(this.stage);
 
-        var text = new game.Sprite('madewithpanda.png', game.system.width / 2, game.system.height - 48, {
-            anchor: { x: 0.5, y: 0 }
-        }).addTo(this.stage);
+        // var text = new game.Sprite('madewithpanda.png', game.system.width / 2, game.system.height - 48, {
+        //     anchor: { x: 0.5, y: 0 }
+        // }).addTo(this.stage);
 
         game.audio.musicVolume = 0.2;
         game.audio.playMusic('music');

@@ -9,10 +9,10 @@ pandaConfig = {
         bgColor: '#000000'
     },
     analytics: {
-        id: 'UA-42024756-5'
+        id: 'UA-26223917-15'
     },
     storage: {
-        id: 'net.pandajs.flyingdog'
+        id: 'pl.1000i.bunny'
     },
     iOS8: {
         system: {
